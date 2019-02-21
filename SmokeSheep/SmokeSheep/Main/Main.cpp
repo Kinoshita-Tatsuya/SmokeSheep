@@ -8,6 +8,7 @@
 #include <cstdlib>
 
 #include "../Class/Singleton/Singleton.h"
+#include "../class/SceneManager/SceneManager.h"
 #include "../GameLib/GameLib.h"
 
 #define _CRTDBG_MAP_ALLOC
@@ -25,6 +26,9 @@ VOID Func()
 		return;
 	}
 
+	SceneManager& rSceneManager = SceneManager::GetInstance();
+	rSceneManager.Update();
+	rSceneManager.Render();
 }
 
 INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR szStr, INT iCmdShow)
