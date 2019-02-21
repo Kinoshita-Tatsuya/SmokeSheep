@@ -109,6 +109,27 @@
     <Filter Include="Main">
       <UniqueIdentifier>{04e0c209-78f3-4ccb-b64e-c879f9fb7e51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager">
+      <UniqueIdentifier>{066e70d7-a27f-4547-8950-51d6282c5239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Application">
+      <UniqueIdentifier>{c1ee04f2-8fc8-4790-a492-5ce9e752e514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene">
+      <UniqueIdentifier>{a3674676-cc2a-42ab-b9a9-1036a840afd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\SCENE_ID">
+      <UniqueIdentifier>{aeba7f55-ca57-492b-9d35-beb997a11ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\ObjManager">
+      <UniqueIdentifier>{a460c8c1-f6f2-4eb1-9cbf-4c3528cbf158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\ObjManager\Obj">
+      <UniqueIdentifier>{248f0a46-71a2-430a-970e-ca5e3fde1f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene">
+      <UniqueIdentifier>{39e03b01-310a-4cba-ba00-95fcf58ee3dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -194,6 +215,21 @@
     </ClCompile>
     <ClCompile Include="Main\Main.cpp">
       <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\SceneManager.cpp">
+      <Filter>class\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="class\Application\Application.cpp">
+      <Filter>class\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\Scene.cpp">
+      <Filter>class\SceneManager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\ObjManager\ObjManager.cpp">
+      <Filter>class\SceneManager\Scene\ObjManager</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\ObjManager\Obj\Obj.cpp">
+      <Filter>class\SceneManager\Scene\ObjManager\Obj</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -292,6 +328,24 @@
     </ClInclude>
     <ClInclude Include="Main\Main.h">
       <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\SceneManager.h">
+      <Filter>class\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="class\Application\Application.h">
+      <Filter>class\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\Scene.h">
+      <Filter>class\SceneManager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\SCENE_ID\SCENE_ID.h">
+      <Filter>class\SceneManager\SCENE_ID</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\ObjManager\ObjManager.h">
+      <Filter>class\SceneManager\Scene\ObjManager</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\ObjManager\Obj\Obj.h">
+      <Filter>class\SceneManager\Scene\ObjManager\Obj</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
