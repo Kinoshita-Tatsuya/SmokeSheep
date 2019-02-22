@@ -148,6 +148,9 @@
     <Filter Include="class\SceneManager\Scene\TitleScene\TitleObj\TitleSelectMenu">
       <UniqueIdentifier>{d3730518-5ae0-4df0-bcc8-4814cfa2e807}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj">
+      <UniqueIdentifier>{fd683531-4277-45f2-84f5-9cd2dafbec44}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -263,6 +266,9 @@
     </ClCompile>
     <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleSelectMenu\TitleSelectMenu.cpp">
       <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleSelectMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameScene.cpp">
+      <Filter>class\SceneManager\Scene\GameScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -394,6 +400,9 @@
     </ClInclude>
     <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleSelectMenu\TitleSelectMenu.h">
       <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleSelectMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameScene.h">
+      <Filter>class\SceneManager\Scene\GameScene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

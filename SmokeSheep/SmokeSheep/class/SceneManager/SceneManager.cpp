@@ -1,4 +1,5 @@
 ﻿#include "SceneManager.h"
+#include "Scene/GameScene/GameScene.h"
 
 void SceneManager::Update()
 {
@@ -29,6 +30,7 @@ void SceneManager::Factory()
 	case SI_GAME:
 		delete m_Scene;
 
+		m_Scene = new GameScene();
 		break;
 
 	default:

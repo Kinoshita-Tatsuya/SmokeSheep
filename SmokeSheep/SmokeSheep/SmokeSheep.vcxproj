@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="class\Application\Application.cpp" />
     <ClCompile Include="class\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameScene.cpp" />
     <ClCompile Include="class\SceneManager\Scene\ObjManager\ObjManager.cpp" />
     <ClCompile Include="class\SceneManager\Scene\ObjManager\Obj\Obj.cpp" />
     <ClCompile Include="class\SceneManager\Scene\Scene.cpp" />
@@ -172,6 +173,7 @@
   <ItemGroup>
     <ClInclude Include="class\Application\Application.h" />
     <ClInclude Include="class\SceneManager\SceneManager.h" />
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameScene.h" />
     <ClInclude Include="class\SceneManager\Scene\ObjManager\ObjManager.h" />
     <ClInclude Include="class\SceneManager\Scene\ObjManager\Obj\Obj.h" />
     <ClInclude Include="class\SceneManager\Scene\Scene.h" />
