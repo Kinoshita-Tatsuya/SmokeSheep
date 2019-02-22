@@ -151,6 +151,12 @@
     <Filter Include="class\SceneManager\Scene\GameScene\GameObj">
       <UniqueIdentifier>{fd683531-4277-45f2-84f5-9cd2dafbec44}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage">
+      <UniqueIdentifier>{8653c09d-70b7-4205-8f0d-f4e2dcd93a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage\STAGE_ID">
+      <UniqueIdentifier>{003c7ced-4f3d-4428-8823-a9576a232729}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -269,6 +275,9 @@
     </ClCompile>
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameScene.cpp">
       <Filter>class\SceneManager\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\Stage.cpp">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -403,6 +412,12 @@
     </ClInclude>
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameScene.h">
       <Filter>class\SceneManager\Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\Stage.h">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\STAGE_ID\STAGE_ID.h">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\STAGE_ID</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
