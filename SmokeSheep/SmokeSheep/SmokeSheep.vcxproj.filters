@@ -139,6 +139,9 @@
     <Filter Include="class\SceneManager\Scene\TitleScene\TitleObj\TitleBack">
       <UniqueIdentifier>{a37262b6-1baa-45f1-b77c-b0a4faa70620}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager\Scene\TitleScene\TitleObj\TitleLogo">
+      <UniqueIdentifier>{ade8d475-29d9-4199-8342-6dd3c1389666}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -245,6 +248,9 @@
     </ClCompile>
     <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitileBack\TitleBack.cpp">
       <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleBack</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleLogo\TitleLogo.cpp">
+      <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleLogo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -367,6 +373,9 @@
     </ClInclude>
     <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitileBack\TitleBack.h">
       <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleBack</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleLogo\TitleLogo.h">
+      <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleLogo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
