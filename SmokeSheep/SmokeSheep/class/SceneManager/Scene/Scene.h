@@ -30,7 +30,7 @@ public:
 		m_objManager->Render();
 	}
 
-private:
+protected:
 	ObjManager* m_objManager = nullptr;
 };
 

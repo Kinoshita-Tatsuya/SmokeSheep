@@ -20,10 +20,14 @@ void SceneManager::Factory()
 
 	switch (m_nextScene)
 	{
-	case SI_GAME:
+	case SI_TITLE:
 		delete m_Scene;
 
-		m_Scene;
+		m_Scene = new TitleScene();
+		break;
+
+	case SI_GAME:
+		delete m_Scene;
 
 		break;
 
