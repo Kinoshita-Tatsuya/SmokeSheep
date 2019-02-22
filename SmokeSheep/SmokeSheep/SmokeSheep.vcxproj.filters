@@ -130,6 +130,15 @@
     <Filter Include="class\SceneManager\Scene\GameScene">
       <UniqueIdentifier>{39e03b01-310a-4cba-ba00-95fcf58ee3dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager\Scene\TitleScene">
+      <UniqueIdentifier>{9029fb96-16cd-4897-b263-ec480cbaab34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\TitleScene\TitleObj">
+      <UniqueIdentifier>{4e0e64dd-64ef-4695-97ca-15839fa1d0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\TitleScene\TitleObj\TitleBack">
+      <UniqueIdentifier>{a37262b6-1baa-45f1-b77c-b0a4faa70620}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -230,6 +239,12 @@
     </ClCompile>
     <ClCompile Include="class\SceneManager\Scene\ObjManager\Obj\Obj.cpp">
       <Filter>class\SceneManager\Scene\ObjManager\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\TitleScene\TitleScene.cpp">
+      <Filter>class\SceneManager\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitileBack\TitleBack.cpp">
+      <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleBack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -346,6 +361,12 @@
     </ClInclude>
     <ClInclude Include="class\SceneManager\Scene\ObjManager\Obj\Obj.h">
       <Filter>class\SceneManager\Scene\ObjManager\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\TitleScene\TitleScene.h">
+      <Filter>class\SceneManager\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitileBack\TitleBack.h">
+      <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleBack</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
