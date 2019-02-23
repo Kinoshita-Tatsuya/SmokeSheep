@@ -136,6 +136,7 @@
     <ClCompile Include="class\SceneManager\Scene\ObjManager\Obj\Obj.cpp" />
     <ClCompile Include="class\SceneManager\Scene\Scene.cpp" />
     <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitileBack\TitleBack.cpp" />
+    <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleAnimations\TitleAnimations.cpp" />
     <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleLogo\TitleLogo.cpp" />
     <ClCompile Include="class\SceneManager\Scene\TitleScene\TitleScene.cpp" />
     <ClCompile Include="class\Singleton\Singleton.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="class\SceneManager\Scene\ObjManager\Obj\Obj.h" />
     <ClInclude Include="class\SceneManager\Scene\Scene.h" />
     <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitileBack\TitleBack.h" />
+    <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleAnimations\TitleAnimations.h" />
     <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleLogo\TitleLogo.h" />
     <ClInclude Include="class\SceneManager\Scene\TitleScene\TitleScene.h" />
     <ClInclude Include="class\SceneManager\SCENE_ID\SCENE_ID.h" />
