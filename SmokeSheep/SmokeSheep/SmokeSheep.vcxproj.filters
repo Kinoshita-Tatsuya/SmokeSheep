@@ -145,6 +145,9 @@
     <Filter Include="class\SceneManager\Scene\TitleScene\TitleObj\TitleAnimations">
       <UniqueIdentifier>{f882910b-c9e6-4e44-9c39-649f4692fa22}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager\Scene\TitleScene\TitleObj\TitleSelectMenu">
+      <UniqueIdentifier>{d3730518-5ae0-4df0-bcc8-4814cfa2e807}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -257,6 +260,9 @@
     </ClCompile>
     <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleAnimations\TitleAnimations.cpp">
       <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleAnimations</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleSelectMenu\TitleSelectMenu.cpp">
+      <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleSelectMenu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -385,6 +391,9 @@
     </ClInclude>
     <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleAnimations\TitleAnimations.h">
       <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleAnimations</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\TitleScene\TitileObj\TitleSelectMenu\TitleSelectMenu.h">
+      <Filter>class\SceneManager\Scene\TitleScene\TitleObj\TitleSelectMenu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
