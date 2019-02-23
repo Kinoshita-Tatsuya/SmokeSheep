@@ -2,9 +2,9 @@
 
 void TitleAnimations::Init()
 {
-	m_rGameLib.CreateTex(_T("SheepAni"), _T("Textures/Title//Animations/Sheep_Stand-by.png"));
-	m_rGameLib.CreateTex(_T("GrandmaAni"), _T("Textures/Title//Animations/Grandmother_Stand-by.png"));
-	m_rGameLib.CreateTex(_T("BirdAni"), _T("Textures/Title//Animations/Bird.png"));
+	m_rGameLib.CreateTex(m_filePathAndKeys[TA_SHEEP][0], m_filePathAndKeys[TA_SHEEP][1]);
+	m_rGameLib.CreateTex(m_filePathAndKeys[TA_GRANDMA][0], m_filePathAndKeys[TA_GRANDMA][1]);
+	m_rGameLib.CreateTex(m_filePathAndKeys[TA_BIRD][0], m_filePathAndKeys[TA_BIRD][1]);
 }
 
 void TitleAnimations::Render()
@@ -42,7 +42,7 @@ void TitleAnimations::SheepAnimation()
 
 	m_rGameLib.CreateRect(sheep, m_animationDatas[TA_SHEEP]);
 
-	m_rGameLib.Render(sheep, m_rGameLib.GetTex(_T("SheepAni")));
+	m_rGameLib.Render(sheep, m_rGameLib.GetTex(m_filePathAndKeys[TA_SHEEP][0]));
 }
 
 void TitleAnimations::GrandmaAnimation()
@@ -74,5 +74,5 @@ void TitleAnimations::GrandmaAnimation()
 
 	m_rGameLib.CreateRect(grandma, m_animationDatas[TA_GRANDMA]);
 
-	m_rGameLib.Render(grandma, m_rGameLib.GetTex(_T("GrandmaAni")));
+	m_rGameLib.Render(grandma, m_rGameLib.GetTex(m_filePathAndKeys[TA_GRANDMA][0]));
 }

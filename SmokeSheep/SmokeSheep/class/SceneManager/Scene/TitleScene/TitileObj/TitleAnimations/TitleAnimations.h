@@ -29,12 +29,20 @@ private:
 		TA_MAX
 	};
 
-	void SheepAnimation();
+	void SheepAnimation();	
 	void GrandmaAnimation();
 	//void BirdAnimation();
 
-	int m_animationCounts[TA_MAX] = { 0,0,0 };		//アニメーションの画像カウント
-	ObjData m_animationDatas[TA_MAX];
+	int m_animationCounts[TA_MAX] = { 0,0,0 };		//アニメーションの画像枚数カウント
+	ObjData m_animationDatas[TA_MAX];				//アニメーションに必要なポリゴンデータ
+
+	const TCHAR* m_filePathAndKeys[TA_MAX][2] =
+	{
+		_T("SheepAni"),		_T("Textures/Title//Animations/Sheep_Stand-by.png"),
+		_T("GrandmaAni"),	_T("Textures/Title//Animations/Grandmother_Stand-by.png"),
+		_T("BirdAni"),		_T("Textures/Title//Animations/Bird.png")
+	};
+
 };
 
 #endif // !TITLE_ANIMATIONS_H_
