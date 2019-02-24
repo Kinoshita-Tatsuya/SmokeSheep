@@ -4,7 +4,6 @@ void TitleAnimations::Init()
 {
 	m_rGameLib.CreateTex(m_filePathAndKeys[TA_SHEEP][0], m_filePathAndKeys[TA_SHEEP][1]);
 	m_rGameLib.CreateTex(m_filePathAndKeys[TA_GRANDMA][0], m_filePathAndKeys[TA_GRANDMA][1]);
-	m_rGameLib.CreateTex(m_filePathAndKeys[TA_BIRD][0], m_filePathAndKeys[TA_BIRD][1]);
 }
 
 void TitleAnimations::Render()
@@ -27,13 +26,13 @@ void TitleAnimations::SheepAnimation()
 	const float IMAGE_SIZE = 250.f;			//統合ファイルの1枚の画像のサイズ
 	const float MAX_IMAGE_SIZE = 2048.f;	//画像の大きさ
 	
-	static int count = 0;
-	count += 1;
+	static int nextImageCount = 0;	//次のアニメーション画像に行くためのフレームカウント
+	nextImageCount += 1;
 
-	if (count == 13)
+	if (nextImageCount == 13)
 	{
 		m_animationCounts[TA_SHEEP] = (m_animationCounts[TA_SHEEP] == NUMBER_OF_IMAGES - 1) ? 0 : ++m_animationCounts[TA_SHEEP];
-		count = 0;
+		nextImageCount = 0;
 	}
 
 	startTU = (IMAGE_SIZE * m_animationCounts[TA_SHEEP]) / MAX_IMAGE_SIZE;
@@ -59,13 +58,13 @@ void TitleAnimations::GrandmaAnimation()
 	const float IMAGE_SIZE = 125.f;			//統合ファイルの1枚の画像のサイズ
 	const float MAX_IMAGE_SIZE = 2048.f;	//画像の大きさ
 
-	static int count = 0;
-	count += 1;
+	static int nextImageCount = 0;	//次のアニメーション画像に行くためのフレームカウント
+	nextImageCount += 1;
 
-	if (count == 13)
+	if (nextImageCount == 13)
 	{
 		m_animationCounts[TA_GRANDMA] = (m_animationCounts[TA_GRANDMA] == NUMBER_OF_IMAGES - 1) ? 0 : ++m_animationCounts[TA_GRANDMA];
-		count = 0;
+		nextImageCount = 0;
 	}
 
 	startTU = (IMAGE_SIZE * m_animationCounts[TA_GRANDMA]) / MAX_IMAGE_SIZE;
