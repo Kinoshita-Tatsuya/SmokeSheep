@@ -38,9 +38,9 @@ private:
 
 	const TCHAR* m_filePathAndKeys[TA_MAX][2] =
 	{
-		_T("SheepAni"),		_T("Textures/Title//Animations/Sheep_Stand-by.png"),
-		_T("GrandmaAni"),	_T("Textures/Title//Animations/Grandmother_Stand-by.png"),
-		_T("BirdAni"),		_T("Textures/Title//Animations/Bird.png")
+		_T("SheepAni"),		_T("Textures/Title/Animations/Sheep_Stand-by.png"),
+		_T("GrandmaAni"),	_T("Textures/Title/Animations/Grandmother_Stand-by.png"),
+		_T("BirdAni"),		_T("Textures/Title/Animations/Bird.png")
 	};
 
 };
