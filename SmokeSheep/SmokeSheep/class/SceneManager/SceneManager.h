@@ -17,6 +17,11 @@ public:
 
 	void Render();
 
+	inline void SetNextScene(SCENE_ID sceneId)
+	{
+		m_nextScene = sceneId;
+	}
+
 private:
 	SceneManager()
 	{
