@@ -34,10 +34,16 @@ private:
 	int m_animationCounts[TA_MAX] = { 0,0 };		//アニメーションの画像枚数カウント
 	ObjData m_animationDatas[TA_MAX];				//アニメーションに必要なポリゴンデータ
 
-	const TCHAR* m_filePathAndKeys[TA_MAX][2] =
+	const TCHAR* m_filePath[TA_MAX] =
 	{
-		_T("SheepAni"),		_T("Textures/Title/Animations/Sheep_Stand-by.png"),
-		_T("GrandmaAni"),	_T("Textures/Title/Animations/Grandmother_Stand-by.png")
+		_T("Textures/Title/Animations/Sheep_Stand-by.png"),
+		_T("Textures/Title/Animations/Grandmother_Stand-by.png")
+	};
+
+	const TCHAR* m_fileKeys[TA_MAX]=
+	{
+		_T("SheepAni"),
+		_T("GrandmaAni")
 	};
 
 };
