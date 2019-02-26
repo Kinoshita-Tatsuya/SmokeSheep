@@ -20,6 +20,8 @@ public:
 	void Update() {}
 	void Render();
 
+private:
+	const TCHAR* m_fileKeys = _T("Logo");
 };
 
 #endif // !TITLE_LOGO_H_

@@ -3,10 +3,10 @@
 
 void TitleSelectMenu::Init()
 {
-	m_rGameLib.CreateTex(m_filePathAndKeys[MO_LEFT_SIGN][0], m_filePathAndKeys[MO_LEFT_SIGN][1]);
-	m_rGameLib.CreateTex(m_filePathAndKeys[MO_RIGHT_SIGN][0], m_filePathAndKeys[MO_RIGHT_SIGN][1]);
-	m_rGameLib.CreateTex(m_filePathAndKeys[MO_LEFT_FONT][0], m_filePathAndKeys[MO_LEFT_FONT][1]);
-	m_rGameLib.CreateTex(m_filePathAndKeys[MO_RIGHT_FONT][0], m_filePathAndKeys[MO_RIGHT_FONT][1]);
+	m_rGameLib.CreateTex(m_fileKeys[MO_LEFT_SIGN], m_filePath[MO_LEFT_SIGN]);
+	m_rGameLib.CreateTex(m_fileKeys[MO_RIGHT_SIGN], m_filePath[MO_RIGHT_SIGN]);
+	m_rGameLib.CreateTex(m_fileKeys[MO_LEFT_FONT], m_filePath[MO_LEFT_FONT]);
+	m_rGameLib.CreateTex(m_fileKeys[MO_RIGHT_FONT], m_filePath[MO_RIGHT_FONT]);
 }
 
 void TitleSelectMenu::Update()
@@ -63,7 +63,7 @@ void TitleSelectMenu::SignRender()
 		CustomVertex signBoard[4];
 
 		m_rGameLib.CreateRect(signBoard, data[i]);
-		m_rGameLib.Render(signBoard, m_rGameLib.GetTex(m_filePathAndKeys[i][0]));
+		m_rGameLib.Render(signBoard, m_rGameLib.GetTex(m_fileKeys[i]));
 	}
 }
 
@@ -89,6 +89,6 @@ void TitleSelectMenu::FontRender()
 		CustomVertex font[4];
 
 		m_rGameLib.CreateRect(font, data[i]);
-		m_rGameLib.Render(font, m_rGameLib.GetTex(m_filePathAndKeys[i + 2][0]));
+		m_rGameLib.Render(font, m_rGameLib.GetTex(m_fileKeys[i + 2]));
 	}
 }
