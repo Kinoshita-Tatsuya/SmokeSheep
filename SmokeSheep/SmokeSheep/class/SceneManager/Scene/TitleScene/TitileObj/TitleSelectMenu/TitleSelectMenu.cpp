@@ -53,11 +53,11 @@ void TitleSelectMenu::SignRender()
 
 		if (m_isStart)
 		{
-			data[0].m_halfScale *= EXPAND_SCALE;
+			data[0].m_halfScale *= EXPAND_SCALE;	//左側
 		}
 		else
 		{
-			data[1].m_halfScale *= EXPAND_SCALE;
+			data[1].m_halfScale *= EXPAND_SCALE;	//右側
 		}
 
 		CustomVertex signBoard[4];
@@ -79,16 +79,16 @@ void TitleSelectMenu::FontRender()
 
 		if (m_isStart)
 		{
-			data[0].m_halfScale *= EXPAND_SCALE;
+			data[0].m_halfScale *= EXPAND_SCALE;	//左側
 		}
 		else
 		{
-			data[1].m_halfScale *= EXPAND_SCALE;
+			data[1].m_halfScale *= EXPAND_SCALE;	//右側
 		}
 
 		CustomVertex font[4];
 
 		m_rGameLib.CreateRect(font, data[i]);
-		m_rGameLib.Render(font, m_rGameLib.GetTex(m_fileKeys[i + 2]));
+		m_rGameLib.Render(font, m_rGameLib.GetTex(m_fileKeys[MO_LEFT_FONT + i]));
 	}
 }
