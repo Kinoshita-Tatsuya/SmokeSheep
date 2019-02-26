@@ -3,7 +3,7 @@
 
 void SceneManager::Update()
 {
-	Factory();
+	Factory(m_nextScene);
 
 	m_Scene->Update();
 }
@@ -13,14 +13,18 @@ void SceneManager::Render()
 	m_Scene->Render();
 }
 
-void SceneManager::Factory()
+void SceneManager::Factory(SCENE_ID nextScene)
 {
-	if (m_currentScene == m_nextScene) return;
+	if (m_currentScene == nextScene) return;
 
-	m_currentScene = m_nextScene;
+	m_currentScene = nextScene;
 
-	switch (m_nextScene)
+	switch (nextScene)
 	{
+	case SI_NONE:
+
+		break;
+
 	case SI_TITLE:
 		delete m_Scene;
 
@@ -36,4 +40,9 @@ void SceneManager::Factory()
 	default:
 		break;
 	}
+}
+
+void SceneManager::StartScene(SCENE_ID scene)
+{
+	Factory(scene);
 }
