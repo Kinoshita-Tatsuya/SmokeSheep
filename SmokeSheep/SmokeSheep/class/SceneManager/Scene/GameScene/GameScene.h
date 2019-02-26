@@ -6,15 +6,9 @@
 class GameScene :public Scene
 {
 public:
-	GameScene()
-	{
+	GameScene();
 
-	}
-
-	~GameScene()
-	{
-
-	}
+	~GameScene();
 
 };
 

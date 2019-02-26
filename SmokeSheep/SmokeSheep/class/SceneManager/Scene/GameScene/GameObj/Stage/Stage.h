@@ -10,8 +10,15 @@
 class Stage :public Obj
 {
 public:
-	Stage();
-	~Stage();
+	Stage()
+	{
+		Init();
+	}
+
+	~Stage()
+	{
+
+	}
 
 	void Init();
 	void Update();
