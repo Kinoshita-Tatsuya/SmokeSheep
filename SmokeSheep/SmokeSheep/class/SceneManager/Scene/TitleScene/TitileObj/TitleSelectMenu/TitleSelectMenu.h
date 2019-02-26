@@ -34,12 +34,20 @@ private:
 		MO_MAX
 	};
 
-	const TCHAR* m_filePathAndKeys[MO_MAX][2]=
+	const TCHAR* m_fileKeys[MO_MAX]=
 	{
-		_T("startSign"),	_T("Textures/Title/SelectIcons/StartFirstBoard.png"),
-		_T("endSign"),		_T("Textures/Title/SelectIcons/endboard.png"),
-		_T("startFont"),	_T("Textures/Title/SelectIcons/start.png"),
-		_T("endFont"),		_T("Textures/Title/SelectIcons/end.png")
+		_T("startSign"),	
+		_T("endSign"),		
+		_T("startFont"),	
+		_T("endFont"),		
+	};
+
+	const TCHAR* m_filePath[MO_MAX] =
+	{
+		_T("Textures/Title/SelectIcons/StartFirstBoard.png"),
+		_T("Textures/Title/SelectIcons/endboard.png"),
+		_T("Textures/Title/SelectIcons/start.png"),
+		_T("Textures/Title/SelectIcons/end.png")
 	};
 
 	bool m_isStart = true;		//始めるかどうか

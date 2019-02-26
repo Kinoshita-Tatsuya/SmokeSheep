@@ -20,6 +20,8 @@ public:
 	void Update() {}
 	void Render();
 
+private:
+	const TCHAR* m_fileKey = _T("Back");
 };
 
 #endif // !TITLE_BACK_H_
