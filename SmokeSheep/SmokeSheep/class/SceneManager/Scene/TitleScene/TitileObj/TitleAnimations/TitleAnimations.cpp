@@ -2,8 +2,8 @@
 
 void TitleAnimations::Init()
 {
-	m_rGameLib.CreateTex(m_filePathAndKeys[TA_SHEEP][0], m_filePathAndKeys[TA_SHEEP][1]);
-	m_rGameLib.CreateTex(m_filePathAndKeys[TA_GRANDMA][0], m_filePathAndKeys[TA_GRANDMA][1]);
+	m_rGameLib.CreateTex(m_fileKeys[TA_SHEEP], m_filePath[TA_SHEEP]);
+	m_rGameLib.CreateTex(m_fileKeys[TA_GRANDMA], m_filePath[TA_GRANDMA]);
 }
 
 void TitleAnimations::Render()
@@ -35,13 +35,15 @@ void TitleAnimations::SheepAnimation()
 		nextImageCount = 0;
 	}
 
-	startTU = (IMAGE_SIZE * m_animationCounts[TA_SHEEP]) / MAX_IMAGE_SIZE;
-	endTU = (IMAGE_SIZE * (m_animationCounts[TA_SHEEP] + 1)) / MAX_IMAGE_SIZE;
+	const float FIRST_TU = IMAGE_SIZE / MAX_IMAGE_SIZE;
+
+	startTU = FIRST_TU * m_animationCounts[TA_SHEEP];
+	endTU = FIRST_TU * (m_animationCounts[TA_SHEEP] + 1);
 	m_animationDatas[TA_SHEEP].m_texUV.m_endTV = 512.f / MAX_IMAGE_SIZE;
 
 	m_rGameLib.CreateRect(sheep, m_animationDatas[TA_SHEEP]);
 
-	m_rGameLib.Render(sheep, m_rGameLib.GetTex(m_filePathAndKeys[TA_SHEEP][0]));
+	m_rGameLib.Render(sheep, m_rGameLib.GetTex(m_fileKeys[TA_SHEEP]));
 }
 
 void TitleAnimations::GrandmaAnimation()
@@ -66,12 +68,14 @@ void TitleAnimations::GrandmaAnimation()
 		m_animationCounts[TA_GRANDMA] = (m_animationCounts[TA_GRANDMA] == NUMBER_OF_IMAGES - 1) ? 0 : ++m_animationCounts[TA_GRANDMA];
 		nextImageCount = 0;
 	}
+	
+	const float FIRST_TU = IMAGE_SIZE / MAX_IMAGE_SIZE;
 
-	startTU = (IMAGE_SIZE * m_animationCounts[TA_GRANDMA]) / MAX_IMAGE_SIZE;
-	endTU = (IMAGE_SIZE * (m_animationCounts[TA_GRANDMA] + 1)) / MAX_IMAGE_SIZE;
+	startTU = FIRST_TU * m_animationCounts[TA_GRANDMA];
+	endTU = FIRST_TU * (m_animationCounts[TA_GRANDMA] + 1);
 	m_animationDatas[TA_GRANDMA].m_texUV.m_endTV = 256.f / MAX_IMAGE_SIZE;
 
 	m_rGameLib.CreateRect(grandma, m_animationDatas[TA_GRANDMA]);
 
-	m_rGameLib.Render(grandma, m_rGameLib.GetTex(m_filePathAndKeys[TA_GRANDMA][0]));
+	m_rGameLib.Render(grandma, m_rGameLib.GetTex(m_fileKeys[TA_GRANDMA]));
 }
