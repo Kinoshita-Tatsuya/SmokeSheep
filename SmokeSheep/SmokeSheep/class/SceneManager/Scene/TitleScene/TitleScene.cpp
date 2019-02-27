@@ -6,10 +6,10 @@
 
 TitleScene::TitleScene()
 {
-	m_objManager->Register(static_cast<Obj*>(new TitleBack()));
-	m_objManager->Register(static_cast<Obj*>(new TitleLogo()));
-	m_objManager->Register(static_cast<Obj*>(new TitleAnimations()));
-	m_objManager->Register(static_cast<Obj*>(new TitleSelectMenu()));
+	m_pobjManager->Register(static_cast<Obj*>(new TitleBack()));
+	m_pobjManager->Register(static_cast<Obj*>(new TitleLogo()));
+	m_pobjManager->Register(static_cast<Obj*>(new TitleAnimations()));
+	m_pobjManager->Register(static_cast<Obj*>(new TitleSelectMenu()));
 }
 
 TitleScene::~TitleScene()

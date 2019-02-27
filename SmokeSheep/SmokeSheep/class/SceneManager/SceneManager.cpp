@@ -1,5 +1,6 @@
 ﻿#include "SceneManager.h"
 #include "Scene/GameScene/GameScene.h"
+#include "Scene/TitleScene/TitleScene.h"
 
 void SceneManager::Update()
 {
@@ -26,9 +27,9 @@ void SceneManager::Factory(SCENE_ID nextScene)
 		break;
 
 	case SI_TITLE:
-		delete m_Scene;
+		delete m_pScene;
 
-		m_Scene = new TitleScene();
+		m_pScene = new TitleScene();
 		break;
 
 	case SI_GAME:
