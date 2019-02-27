@@ -10,7 +10,10 @@ class SceneManager:public Singleton<SceneManager>
 public:
 	friend class Singleton<SceneManager>;
 
-	~SceneManager() {}
+	~SceneManager() 
+	{
+		delete m_pScene;
+	}
 
 	void Update();
 
@@ -30,7 +33,7 @@ private:
 	void Factory(SCENE_ID nextScene);
 	void StartScene(SCENE_ID scene);
 
-	Scene* m_Scene = nullptr;
+	Scene* m_pScene = nullptr;
 	SCENE_ID m_currentScene = SI_NONE;
 	SCENE_ID m_nextScene = SI_NONE;
 };

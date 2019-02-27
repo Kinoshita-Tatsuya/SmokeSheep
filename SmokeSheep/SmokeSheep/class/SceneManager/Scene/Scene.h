@@ -10,28 +10,31 @@ class Scene
 public:
 	Scene() 
 	{
-		m_objManager = new ObjManager();
+		m_pobjManager = new ObjManager();
 	}
 
-	virtual ~Scene() {}
+	~Scene() 
+	{
+		delete m_pobjManager;
+	}
 
 	virtual void Init()
 	{
-		m_objManager->Init();
+		m_pobjManager->Init();
 	}
 
 	virtual void Update()
 	{
-		m_objManager->Update();
+		m_pobjManager->Update();
 	}
 
 	virtual void Render()
 	{
-		m_objManager->Render();
+		m_pobjManager->Render();
 	}
 
 protected:
-	ObjManager* m_objManager = nullptr;
+	ObjManager* m_pobjManager = nullptr;
 };
 
 #endif // !SCENE_H_

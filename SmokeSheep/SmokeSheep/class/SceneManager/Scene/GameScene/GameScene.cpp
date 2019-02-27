@@ -3,7 +3,7 @@
 
 GameScene::GameScene()
 {
-	m_objManager->Register(static_cast<Obj*>(new Stage()));
+	m_pobjManager->Register(static_cast<Obj*>(new Stage()));
 }
 
 GameScene::~GameScene()

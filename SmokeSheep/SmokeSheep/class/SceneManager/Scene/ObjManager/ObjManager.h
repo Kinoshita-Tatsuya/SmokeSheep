@@ -8,6 +8,13 @@
 class ObjManager
 {
 public:
+	ObjManager() {}
+
+	~ObjManager()
+	{
+		Release();
+	}
+	
 	void Init();
 
 	void Update();
@@ -17,6 +24,8 @@ public:
 	void Register(Obj* pobj);
 
 private:
+	void Release();
+
 	std::vector<Obj*> m_Obj;
 };
 

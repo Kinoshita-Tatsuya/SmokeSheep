@@ -5,12 +5,12 @@ void SceneManager::Update()
 {
 	Factory(m_nextScene);
 
-	m_Scene->Update();
+	m_pScene->Update();
 }
 
 void SceneManager::Render()
 {
-	m_Scene->Render();
+	m_pScene->Render();
 }
 
 void SceneManager::Factory(SCENE_ID nextScene)
@@ -32,9 +32,9 @@ void SceneManager::Factory(SCENE_ID nextScene)
 		break;
 
 	case SI_GAME:
-		delete m_Scene;
+		delete m_pScene;
 
-		m_Scene = new GameScene();
+		m_pScene = new GameScene();
 		break;
 
 	default:
