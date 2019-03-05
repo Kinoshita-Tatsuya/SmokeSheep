@@ -5,7 +5,7 @@ namespace STAGE
 {
 	enum BLOCK_ID
 	{
-		BLOCK_NONE,
+		NONE,
 		GROUND,
 		GRASS,
 		GROUND_NIGHT,
@@ -14,7 +14,8 @@ namespace STAGE
 		SNOW,
 		IVY,
 		DIE,
-		GOAR
+		GOAR,
+		BLOCK_MAX
 	};
 
 	enum WOLF_ID
@@ -23,14 +24,16 @@ namespace STAGE
 		SPEED,
 		VITALITY,
 		HID,
-		KIDS
+		KIDS,
+		WOLF_MAX
 	};
 
 	enum ITEM_ID
 	{
 		CANDY_FLOSS = 41,
 		BONFIRE,
-		SNOW_CLOUDS
+		SNOW_CLOUDS,
+		ITEM_MAX
 	};
 
 	enum GIMMIC_ID
@@ -47,6 +50,7 @@ namespace STAGE
 		ICICLES_SECOND,
 		ICICLES_THIRD,
 		NEEDLE_FOUR,
+		GIMMIC_MAX
 	};
 
 	enum SIGN_ID
@@ -60,6 +64,7 @@ namespace STAGE
 		SIGN_BOARD_SEVEN,
 		SIGN_BOARD_EIGHT,
 		SIGN_BOARD_NINE,
+		SIGN_BOARD_MAX
 	};
 
 	enum BACK_GROUND_ID
@@ -71,6 +76,7 @@ namespace STAGE
 		HOUSE_GRANDMA,
 		SIGN_BOARD_ALLOW,
 		SIGN_BOARD_ATTENTION,
+		BACK_GROUND_MAX
 	};
 
 }
