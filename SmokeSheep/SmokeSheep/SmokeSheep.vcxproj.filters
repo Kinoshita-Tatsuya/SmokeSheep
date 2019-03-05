@@ -157,6 +157,18 @@
     <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage\STAGE_ID">
       <UniqueIdentifier>{003c7ced-4f3d-4428-8823-a9576a232729}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager">
+      <UniqueIdentifier>{7cd691aa-4647-4f39-b385-83a61bec8532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock">
+      <UniqueIdentifier>{f198e78a-f577-41cc-a196-0611b0202ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BlockData">
+      <UniqueIdentifier>{0d718d60-237a-416e-89d3-767518582371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GrassBlock">
+      <UniqueIdentifier>{76398727-e27b-4b5c-8d4b-b250635c5ef7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -278,6 +290,15 @@
     </ClCompile>
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\Stage.cpp">
       <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BlockManager.cpp">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BaseBlock.cpp">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GrassBlock\GrassBlock.cpp">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GrassBlock</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -418,6 +439,18 @@
     </ClInclude>
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\STAGE_ID\STAGE_ID.h">
       <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\STAGE_ID</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BlockManager.h">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BaseBlock.h">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BlockData\BlockData.h">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BlockData</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GrassBlock\GrassBlock.h">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GrassBlock</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

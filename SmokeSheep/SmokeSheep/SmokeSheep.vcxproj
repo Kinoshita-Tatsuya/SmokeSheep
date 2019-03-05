@@ -132,6 +132,9 @@
   <ItemGroup>
     <ClCompile Include="class\Application\Application.cpp" />
     <ClCompile Include="class\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BaseBlock.cpp" />
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GrassBlock\GrassBlock.cpp" />
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BlockManager.cpp" />
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\Stage.cpp" />
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameScene.cpp" />
     <ClCompile Include="class\SceneManager\Scene\ObjManager\ObjManager.cpp" />
@@ -174,6 +177,10 @@
   <ItemGroup>
     <ClInclude Include="class\Application\Application.h" />
     <ClInclude Include="class\SceneManager\SceneManager.h" />
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BaseBlock.h" />
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BlockData\BlockData.h" />
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GrassBlock\GrassBlock.h" />
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BlockManager.h" />
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\Stage.h" />
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\STAGE_ID\STAGE_ID.h" />
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameScene.h" />
