@@ -4,7 +4,6 @@
 #include <vector>
 
 #include "../../../ObjManager/Obj/Obj.h"
-#include "STAGE_ID/STAGE_ID.h"
 
 class Stage :public Obj
 {
