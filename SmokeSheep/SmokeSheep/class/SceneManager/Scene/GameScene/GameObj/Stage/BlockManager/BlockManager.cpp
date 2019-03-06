@@ -4,6 +4,7 @@
 #include "BaseBlock/GrassBlock/GrassBlock.h"
 #include "BaseBlock/GroundNightBlock/GroundNightBlock.h"
 #include "BaseBlock/GrassNightBlock/GrassNightBlock.h"
+#include "BaseBlock/IceBlock/IceBlock.h"
 
 void BlockManager::Init()
 {
@@ -59,7 +60,8 @@ void BlockManager::Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY)
 		break;
 
 	case STAGE::ICE:
-		
+		baseBlock = new IceBlock(data);
+
 		break;
 
 	case STAGE::SNOW:
