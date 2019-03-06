@@ -16,20 +16,33 @@ void BlockManager::Init()
 	{
 		m_rgameLib.CreateTex(m_ptextureKey[i], m_ptexturePath[i]);
 	}
+
+	for (BaseBlock* pI : m_blocks)
+	{
+		pI->Init();
+	}
 }
 
 void BlockManager::Update()
 {
-
+	for (BaseBlock* pI : m_blocks)
+	{
+		pI->Update();
+	}
 }
 
 void BlockManager::Render()
 {
-
+	for (BaseBlock* pI: m_blocks)
+	{
+		pI->Render();
+	}
 }
 
 void BlockManager::Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY)
 {
+	if (blockId == STAGE::NONE) return; //何もないから作る必要がない
+
 	BlockData data;
 	BaseBlock* baseBlock = nullptr;
 
@@ -39,10 +52,6 @@ void BlockManager::Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY)
 
 	switch (blockId)
 	{
-	case STAGE::NONE:
-
-		break;
-
 	case STAGE::GROUND:
 		baseBlock = new GroundBlock(data);
 
@@ -90,4 +99,6 @@ void BlockManager::Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY)
 	default:
 		break;
 	}
+
+	m_blocks.push_back(baseBlock);
 }

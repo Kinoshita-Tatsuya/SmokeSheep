@@ -27,7 +27,7 @@ public:
 	void Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY);
 
 private:
-	std::vector<BaseBlock> m_blocks;
+	std::vector<BaseBlock*> m_blocks;
 
 	const TCHAR* m_ptextureKey[STAGE::BLOCK_MAX] =
 	{
