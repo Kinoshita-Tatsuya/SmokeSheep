@@ -7,46 +7,17 @@
 
 void Stage::Init()
 {
-	m_rGameLib.CreateTex(_T("block"), _T("Textures/Game/Block/block_2.png"));
 	ReadStage("Stage/1-1.csv");
 }
 
 void Stage::Update()
 {
-	const float SCROOL_VALUE = 32.f;
-
-	if (m_rGameLib.KeyboardIsHeld(DIK_A))
-	{
-		m_xScroll += SCROOL_VALUE;
-	}
-
-	if (m_rGameLib.KeyboardIsHeld(DIK_D))
-	{
-		m_xScroll += -SCROOL_VALUE;
-	}
-
+	m_blockManager.Update();
 }
 
 void Stage::Render()
 {
-	const float BLOCK_SCALE = 64.f;
-
-	for (int y = 0;y != m_stageIds.size();++y)
-	{
-		for (int x = 0;x != m_stageIds[y].size();++x)
-		{
-			if (m_stageIds[y][x] == 0) continue;
-
-			CustomVertex IdVertex[4];
-			ObjData data;
-
-			data.m_center = { (((BLOCK_SCALE * (x + 1))+ m_xScroll)),(BLOCK_SCALE * (y + 1)),0.0f };
-			data.m_halfScale = { BLOCK_SCALE,BLOCK_SCALE,0.0f };
-
-			m_rGameLib.CreateRect(IdVertex, data);
-			m_rGameLib.Render(IdVertex, m_rGameLib.GetTex(_T("block")));
-		}
-	}
+	m_blockManager.Render();
 }
 
 void Stage::ReadStage(const char* pfileName)
@@ -80,8 +51,21 @@ void Stage::ReadStage(const char* pfileName)
 		for (int x = 0;x != m_stageIds[y].size();++x)
 		{
 			stageStream >> m_stageIds[y][x];
+
+			CreateBlock(m_stageIds[y][x], x, y);
 		}
 
 		++y;
+	}
+}
+
+void Stage::CreateBlock(int stageId, int arrayX, int arrayY)
+{
+	bool canCreate = (stageId > STAGE::NONE) && (stageId < STAGE::BLOCK_MAX);
+
+	if (canCreate)
+	{
+		STAGE::BLOCK_ID blockId = static_cast<STAGE::BLOCK_ID>(stageId);
+		m_blockManager.Create(blockId, arrayX, arrayY);
 	}
 }
