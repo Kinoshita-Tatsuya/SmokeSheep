@@ -1,37 +1,49 @@
 ﻿#include "SceneManager.h"
+#include "Scene/GameScene/GameScene.h"
+#include "Scene/TitleScene/TitleScene.h"
 
 void SceneManager::Update()
 {
-	Factory();
+	Factory(m_nextScene);
 
-	m_Scene->Update();
+	m_pScene->Update();
 }
 
 void SceneManager::Render()
 {
-	m_Scene->Render();
+	m_pScene->Render();
 }
 
-void SceneManager::Factory()
+void SceneManager::Factory(SCENE_ID nextScene)
 {
-	if (m_currentScene == m_nextScene) return;
+	if (m_currentScene == nextScene) return;
 
-	m_currentScene = m_nextScene;
+	m_currentScene = nextScene;
 
-	switch (m_nextScene)
+	switch (nextScene)
 	{
-	case SI_TITLE:
-		delete m_Scene;
+	case SI_NONE:
 
-		m_Scene = new TitleScene();
+		break;
+
+	case SI_TITLE:
+		delete m_pScene;
+
+		m_pScene = new TitleScene();
 		break;
 
 	case SI_GAME:
-		delete m_Scene;
+		delete m_pScene;
 
+		m_pScene = new GameScene();
 		break;
 
 	default:
 		break;
 	}
+}
+
+void SceneManager::StartScene(SCENE_ID scene)
+{
+	Factory(scene);
 }

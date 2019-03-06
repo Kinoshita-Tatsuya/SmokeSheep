@@ -4,14 +4,16 @@
 #include "../Singleton/Singleton.h"
 #include "SCENE_ID/SCENE_ID.h"
 #include "Scene/Scene.h"
-#include "Scene/TitleScene/TitleScene.h"
 
 class SceneManager:public Singleton<SceneManager>
 {
 public:
 	friend class Singleton<SceneManager>;
 
-	~SceneManager() {}
+	~SceneManager() 
+	{
+		delete m_pScene;
+	}
 
 	void Update();
 
@@ -25,14 +27,15 @@ public:
 private:
 	SceneManager()
 	{
-		m_Scene = new TitleScene();
+		StartScene(SI_TITLE);
 	}
 
-	void Factory();
+	void Factory(SCENE_ID nextScene);
+	void StartScene(SCENE_ID scene);
 
-	Scene* m_Scene = nullptr;
-	SCENE_ID m_currentScene;
-	SCENE_ID m_nextScene;
+	Scene* m_pScene = nullptr;
+	SCENE_ID m_currentScene = SI_NONE;
+	SCENE_ID m_nextScene = SI_NONE;
 };
 
 #endif // !SCENE_MANAGER_H_

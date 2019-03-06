@@ -28,3 +28,14 @@ void ObjManager::Register(Obj* pobj)
 {
 	m_Obj.push_back(pobj);
 }
+
+void ObjManager::Release()
+{
+	for (Obj* pi : m_Obj)
+	{
+		delete pi;
+	}
+
+	m_Obj.clear();
+	m_Obj.shrink_to_fit();
+}
