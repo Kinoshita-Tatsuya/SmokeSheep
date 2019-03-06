@@ -1,5 +1,6 @@
 ﻿#include "BlockManager.h"
 
+#include "BaseBlock/GroundBlock/GroundBlock.h"
 #include "BaseBlock/GrassBlock/GrassBlock.h"
 
 void BlockManager::Init()
@@ -36,6 +37,7 @@ void BlockManager::Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY)
 		break;
 
 	case STAGE::GROUND:
+		baseBlock = new GroundBlock(data);
 
 		break;
 
