@@ -8,6 +8,7 @@
 #include "BaseBlock/SnowBlock/SnowBlock.h"
 #include "BaseBlock/IvyBlock/IvyBlock.h"
 #include "BaseBlock/DieBlock/DieBlock.h"
+#include "BaseBlock/GoarBlock/GoarBlock.h"
 
 void BlockManager::Init()
 {
@@ -83,7 +84,7 @@ void BlockManager::Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY)
 		break;
 
 	case STAGE::GOAR:
-		
+		baseBlock = new GoarBlock(data);
 		break;
 
 	default:
