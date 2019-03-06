@@ -21,7 +21,7 @@ public:
 	virtual void Render();		//継承先で変わる可能性があるのでvirtualにする
 
 protected:
-	const float m_blockScale = 64.f;
+	const float m_blockScale = 32.f;
 	BlockData m_blockData;
 };
 
