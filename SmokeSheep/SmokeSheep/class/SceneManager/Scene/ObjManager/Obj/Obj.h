@@ -8,6 +8,8 @@ class Obj
 public:
 	Obj() :m_rGameLib(GameLib::GetInstance()),m_WND_SIZE(m_rGameLib.GetWndSize()) {}
 
+	virtual ~Obj() {}
+
 	virtual void Init() = 0;
 
 	virtual void Update() = 0;
