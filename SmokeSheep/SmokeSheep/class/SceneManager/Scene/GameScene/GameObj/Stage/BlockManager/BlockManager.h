@@ -18,6 +18,7 @@ public:
 	~BlockManager()
 	{
 		m_rgameLib.ReleaseTex();
+		Release();
 	}
 
 	void Init();
@@ -25,6 +26,9 @@ public:
 	void Render();
 	
 	void Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY);
+
+private:
+	void Release();
 
 private:
 	std::vector<BaseBlock*> m_blocks;

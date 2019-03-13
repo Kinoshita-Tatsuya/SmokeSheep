@@ -8,9 +8,9 @@ void BaseBlock::Render()
 	int x = m_blockData.m_arrayXNum;
 	int y = m_blockData.m_arrayYNum;
 
-	const float blockCenter = m_blockScale * 2;
+	const float BLOCK_CENTER = m_blockScale * 2;
 
-	data.m_center = { blockCenter * x , blockCenter * y ,0.f };
+	data.m_center = { BLOCK_CENTER * x , BLOCK_CENTER * y ,0.f };
 	data.m_halfScale = { m_blockScale , m_blockScale, 0.0f };
 
 	m_rGameLib.CreateRect(block, data);

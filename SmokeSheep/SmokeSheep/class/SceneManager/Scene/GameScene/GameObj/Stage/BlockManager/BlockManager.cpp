@@ -102,3 +102,12 @@ void BlockManager::Create(STAGE::BLOCK_ID blockId, int arrayX, int arrayY)
 
 	m_blocks.push_back(baseBlock);
 }
+
+void BlockManager::Release()
+{
+	for (BaseBlock* pi : m_blocks)
+	{
+		delete pi;
+		pi = nullptr;
+	}
+}
