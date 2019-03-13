@@ -193,6 +193,9 @@
     <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GoarBlock">
       <UniqueIdentifier>{bf653a84-bc8d-4b63-9f46-0e5a81795dc0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="class\SceneManager\Scene\GameScene\GameObj\Player">
+      <UniqueIdentifier>{58aed859-7f3f-44ee-ab3a-18cd26b39672}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class\Singleton\Singleton.cpp">
@@ -347,6 +350,9 @@
     </ClCompile>
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GoarBlock\GoarBlock.cpp">
       <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GoarBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Player\Player.cpp">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -523,6 +529,9 @@
     </ClInclude>
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GoarBlock\GoarBlock.h">
       <Filter>class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GoarBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Player\Player.h">
+      <Filter>class\SceneManager\Scene\GameScene\GameObj\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

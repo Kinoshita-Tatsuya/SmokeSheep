@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="class\Application\Application.cpp" />
     <ClCompile Include="class\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Player\Player.cpp" />
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BaseBlock.cpp" />
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\DieBlock\DieBlock.cpp" />
     <ClCompile Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\GoarBlock\GoarBlock.cpp" />
@@ -185,6 +186,7 @@
   <ItemGroup>
     <ClInclude Include="class\Application\Application.h" />
     <ClInclude Include="class\SceneManager\SceneManager.h" />
+    <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Player\Player.h" />
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BaseBlock.h" />
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\BlockData\BlockData.h" />
     <ClInclude Include="class\SceneManager\Scene\GameScene\GameObj\Stage\BlockManager\BaseBlock\DieBlock\DieBlock.h" />
